@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@400;700&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.body {
+  color: #fff;
+  font-family: "Khula", sans-serif;
+  height: 10vh;
+  font-size: 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: margin 0.5s ease-in-out;
+  background: linear-gradient(#29323c, #485563);
+  z-index: 2;
+}
+
+.card.up {
+  margin-top: -100vh;
+}
+
+.title {
+  line-height: 1.4;
+  font-size: 4rem;
+  color: lightgrey;
+}
+
+.start {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.start:hover {
+  color: aqua;
+  transform: scale(1.2);
+  text-shadow: -8px -8px 20px #fff, 10px 7px 20px lightskyblue;
+}
+
+.time-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.time-list__item {
+  margin: 10px;
+}
+
+.time-list__button {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.time-list__button:hover {
+  color: #0ee6f1;
+  border: 2px solid #0ee6f1;
+  transform: scale(1.2);
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  background: #6c7573;
+  box-shadow: -10px -10px 25px #fff, 15px 10px 25px lightskyblue;
+  border-radius: 20px;
+  position: relative;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #0ee6f1;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+
+.modal-window {
+  width: 350px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #c8c8c8;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ 
+
+}
+
+.modal-window__text-decor {
+  color: #485563;
+  font-style: italic;
+}
+
+.modal-window__decor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-window__btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #485563;
+  cursor: pointer;
+}
+
+.modal-window__btn:hover {
+  transform: scale(1.2);
+  box-shadow: -5px -5px 10px #647383;
+  transition: 1s;
+
+}
